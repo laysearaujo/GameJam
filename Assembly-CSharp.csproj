@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Movimentacao.cs" />
      <Compile Include="Assets\Player1.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Layse/Desktop/GameJam/MInas/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -20,16 +20,17 @@ public class Player1 : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Vertical"))
+       /* if (Input.GetButtonDown("Vertical"))
         {
             aux = 1;
             this.Impulsionar();
-        }
+        }*/
 
         if (Input.GetButtonDown("Jump"))
         {
             aux = 2;
             this.Impulsionar();
+            GetComponent<Animator>().SetTrigger("Jump");
         }
 
         float movimento = Input.GetAxis("Horizontal"); 
@@ -39,17 +40,22 @@ public class Player1 : MonoBehaviour
     
     private void Impulsionar()
     {
-        if(aux == 1)
+        /*if(aux == 1)
         {
             this.fisica.AddForce(Vector2.up * this.forcaSubir, ForceMode2D.Impulse);
             aux = 0;
-        }
+        }*/
         if(aux == 2) 
         {
             this.fisica.AddForce(Vector2.up * this.forcaPular, ForceMode2D.Impulse);
             aux = 0;
         }
         
+    }
+
+    private void Animator()
+    {
+
     }
 
 }
